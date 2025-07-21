@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineMax</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #e50914;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .item {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .item-title {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CineMax - Catálogo de Series</h1>
+
+  <div class="catalogo">
+
+    <div class="item">
+      <img src="https://image.tmdb.org/t/p/w500/rlR4PJn8b8VVXiVLCQ9uRi5ecAL.jpg" alt="El Juego del Calamar">
+      <div class="item-title">El Juego del Calamar</div>
+      <iframe src="https://www.youtube.com/embed/oqxAJKy0ii4?hl=es" allowfullscreen></iframe>
+    </div>
+
+    <div class="item">
+      <img src="https://image.tmdb.org/t/p/w500/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg" alt="Spider-Man: No Way Home">
+      <div class="item-title">Spider-Man: No Way Home</div>
+      <iframe src="https://www.youtube.com/embed/zXzxt1VZz0I?hl=es" allowfullscreen></iframe>
+    </div>
+
+    <div class="item">
+      <img src="https://image.tmdb.org/t/p/w500/pD6sL4vntUOXHmuvJPPZAgvyfd9.jpg" alt="Stranger Things">
+      <div class="item-title">Stranger Things</div>
+      <iframe src="https://www.youtube.com/embed/z8rT8pQpPZk?hl=es" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>
