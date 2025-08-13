@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AulaVerde - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AulaVerde</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="temas.html">Temas</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Únete a la comunidad AulaVerde</h2>
+            <p>¿Tienes una pregunta, una sugerencia o quieres colaborar? Escríbenos.</p>
+            
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="asunto">Tipo de consulta</label>
+                    <select id="asunto" name="asunto">
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="pregunta">Pregunta sobre un proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AulaVerde. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
